@@ -1,0 +1,19 @@
+#login-form {
+  width: min(576px, 100%);
+}
+
+#login-form .button {
+  margin: auto;
+}
+
+@media only screen and (min-width: 576px) {
+  #login-form .button {
+    min-width: 15rem;
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  #login-form .button {
+    width: 100%;
+  }
+}

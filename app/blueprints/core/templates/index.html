@@ -1,0 +1,34 @@
+{% extends 'base.html' %} {% block css %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('core.static', filename='css/index.css') }}"
+/>
+{% endblock %} {% block content %}
+<header>
+  <div class="header-content">
+    <h1 class="initial-title">Emergency BD</h1>
+    <p class="initial-subtitle">An emergency problem notifier for Bangladesh</p>
+    <p class="description">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum accusamus
+      explicabo soluta provident nesciunt non. Numquam excepturi dicta eos iure
+      assumenda optio voluptatem ratione, alias, fugit in consequatur, maxime
+      animi.
+    </p>
+    <div class="buttons">
+      <button type="button" class="button button-solid-red">
+        &plus; I'm in Emergency
+      </button>
+      <!-- <button type="button" class="button button-outline-red">
+        &times; Unsolved Problems
+      </button> -->
+      <button
+        type="button"
+        class="button button-outline-green"
+        onclick="window.location.href=`{{ url_for('authentication.register') }}`"
+      >
+        &plus; Register as Volunteer
+      </button>
+    </div>
+  </div>
+</header>
+{% endblock %}

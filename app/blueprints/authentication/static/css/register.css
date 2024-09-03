@@ -1,0 +1,30 @@
+#registration-form {
+  width: min(720px, 100%);
+}
+#registration-form:has([value="NID"]:checked) #nid-input-field {
+  display: flex;
+}
+#registration-form:has([value="NID"]:checked) #brn-input-field {
+  display: none;
+}
+#registration-form:has([value="brn"]:checked) #nid-input-field {
+  display: none;
+}
+#registration-form:has([value="brn"]:checked) #brn-input-field {
+  display: flex;
+}
+#registration-form .button {
+  margin: auto;
+}
+
+@media only screen and (max-width: 576px) {
+  #registration-form .button {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 577px) {
+  #registration-form .button {
+    width: 33.33%;
+  }
+}

@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "emergencybd"
+version = "1.0"
+description = "An emergency problem notifier for Bangladesh"
+authors = ["Emergency BD Team <project.emergencybd@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+flask = "^3.0.3"
+flask-login = "^0.6.3"
+flask-sqlalchemy = "^3.1.1"
+phonenumbers = "^8.13.44"
+python-dotenv = "^1.0.1"
+pyotp = "^2.9.0"
+
+
+[tool.poetry.group.dev.dependencies]
+faker = "^28.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
